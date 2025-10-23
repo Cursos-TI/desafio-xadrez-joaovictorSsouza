@@ -15,9 +15,11 @@ int main() {
     /* For fazendo com que C seja acrescentado +1
        a cada repetição até chegar no valor final 
        da mivimenta ção da torre (move_torre).*/
-       
+
     printf("----------------------------------\n");
     printf("         MOVENDO A TORRE!         \n");
+    printf("\n");
+
     for (int c = 0; c < move_torre; c++){ 
         printf("             direita...           \n");
     }
@@ -30,6 +32,8 @@ int main() {
 
     printf("----------------------------------\n");
     printf("          MOVENDO A BISPO!        \n");
+    printf("\n");
+
     while (passo_bispo < move_bispo)
     {
         printf("             direita...           \n");
@@ -45,11 +49,34 @@ int main() {
 
     printf("----------------------------------\n");
     printf("         MOVENDO A RAINHA!        \n");
+    printf("\n");
+
     do
     {
         printf("             esquerda...           \n");
         passo_queen += 1;
     } while (passo_queen < move_queen);
+
+    // Implementação de Movimentação da Cavalo
+    // Sistema: Utilização For e while para mover o cavalo.
+    /* For travado até dois por que o cavalo só pode se mover 2 vezes na mexida 
+       e na segunda mexida o while trava para ocorrer apenas 1 vez.*/
+
+    printf("----------------------------------\n");
+    printf("         MOVENDO O CAVALO!        \n");
+    printf("\n");
+
+    for (int c = 0; c < 2;){
+        printf("             baixo...             \n");
+        c += 1;
+        while (c == 2)
+        {
+            printf("             esquerda...           \n");
+            break;
+        }
+        
+    }
+
 
     printf("----------------------------------\n");
 
